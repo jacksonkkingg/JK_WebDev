@@ -11,13 +11,31 @@
     <nav>
       <!-- use UL LI and A for Nav Links within our NAV tag -->
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
     <h1>Contact Us</h1>
     <!-- Bonus - Place Images Here -->
+
+    <img src="./img/chicken3.jpeg" width="30%" />
+
     <!-- Double Bonus - Make a Contact Form -->
+      <form method="post" name="contact">
+        <fieldset>
+          <legend>We'd like to hear from you!</legend>
+          <label for="user_email">Your email: </label>
+          <input type="text" name="user_email" required />
+          <br />
+          <br />
+          <label for="message">Your message: </label>
+          <textarea name="message" cols="50" rows="5" required></textarea>
+        </fieldset>
+
+        <button title="Submit_button" name="submit_message">
+          Send
+        </button>
+      </form>
   </body>
 </html>

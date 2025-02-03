@@ -14,13 +14,33 @@
     <nav>
       <!-- use UL LI and A for Nav Links within our NAV tag -->
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/index.html">About</a></li>
+        <li><a href="../contact/index.html">Contact</a></li>
       </ul>
     </nav>
     <h1>Contact Us</h1>
     <!-- Bonus - Place Images Here -->
     <!-- Double Bonus - Add Contact Form Here -->
+     <form method="POST" name="contact" >
+      <h3>Contact us</h3>
+      <label for="firstName">First Name</label>
+      <br />
+      <input type="text" name="firstName" required/>
+      <br />
+      <label for="lastName">Last Name</label>
+      <br />
+      <input type="text" name="lastName" />
+      <br />
+      <label for="email">Email Address</label>
+      <br />
+      <input name="email" type="email" required/>
+      <br />
+      <label for="message">Whats up?</label>
+      <br />
+      <textarea name="message" cols="100" rows="10" required></textarea>
+      <br />
+      <button>Send Message</button>
+     </form>
   </body>
 </html>
