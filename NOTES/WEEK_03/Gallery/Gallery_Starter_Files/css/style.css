@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+.kaushan-script-regular {
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Global styles */
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background-color: black;
+    /* This is how we get a full sized fixed image centered background */
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+  }
+
+  /* apply default font style at the body tag
+  so all children elements inherit this style */
+
+  /* GALLERY */
+
+  .container {
+    width: 900px;
+    margin: 100px auto;
+    font-size: 0;
+  }
+
+  .polaroid {
+    width: 300px;
+    margin: 20px;
+    display: inline-block;
+    
+}

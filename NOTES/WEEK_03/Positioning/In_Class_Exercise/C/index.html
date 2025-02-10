@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Positioning</title>
+    <style type="text/CSS">
+      .abs_br {
+        width: 200px;
+        height: 200px;
+        background-color: rebeccapurple;
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+      }
+
+      .rel_tl {
+        width: 200px;
+        height: 200px;
+        background-color: cadetblue;
+        position: relative;
+        top: 0;
+        left: 10px;
+      }
+
+      .abs_child {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        bottom: 0;
+        left: 300;
+        position: absolute;
+
+      }
+
+        .rel_parent {
+          width: 400px;
+          height: 400px;
+          background-color: green;
+          position: relative;
+
+      }
+
+      .abs_parent {
+        width: 600px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- When we position an element absolute
+      without declaring a position type for any parent element 
+      absolute positioning is based on the browser window
+      -->
+    <div class="abs_br"> </div>
+    <!-- When we position an element relative
+     without delcaring a position type for any parent element the element is
+     positioned relative to where it was going to be anyway 
+      -->
+    <div class="rel_tl"> </div>
+
+    <div class="rel_parent">
+      <div class="abs_child"></div>
+    </div>
+
+    <div class>
+      <div></div>
+    </div>
+  </body>
+</html>

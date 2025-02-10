@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Navbar</title>
+
+    <style type="text/CSS">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: fantasy;
+      }
+
+      header {
+        background-color: cornflowerblue;
+        width: 100%;
+      }
+
+      /* looking for a nav tag with the ID of main_nav and then find UL tags inside of it */
+      nav#main_nav ul {
+        /* remove all bullet points */
+        list-style-type: none;
+        overflow: hidden;
+        /* background-color: forestgreen; */
+        /* since we are using nline block, we need to zero out the font-size */
+        font-size: 0;
+
+      }
+
+      #main_nav ul li {
+        /* li display block by default,
+        they want to take 100% width up and not share horizonatal space */
+        display: inline_block;
+        font-size: 1rem;
+      }
+
+      li a {
+        display: block;
+        text-align: center;
+        width: 100px;
+        padding: 10px;
+        /* remove the default link styles */
+        text-decoration: none;
+        color: chartreuse;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav id="main_nav">
+          <ul>
+            <li><a href="#"></a>Link 1</li>
+            <li><a href="#"></a>Link 2</li>
+            <li><a href="#"></a>Link 3</li>
+            <li><a href="#"></a>Link 4</li>
+          </ul>
+        </nav>
+    </header>
+  </body>
+</html>
